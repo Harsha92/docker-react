@@ -8,4 +8,6 @@ before_install:
 
 script:
     # Run the test suit
-  - docker run harsha333/docker-react npm run test -- --coverage
+  - docker run -e CI=true harsha333/docker-react npm run test -- --coverage
+
+language: generic 
